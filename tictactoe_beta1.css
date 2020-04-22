@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 html {
-	background-image: url(89033630_2768219579880847_6136257124830806016_o.jpg)
-				center center / 100% 100%
-				no-repeat fixed content-box content-box;
+	background-image: url(89033630_2768219579880847_6136257124830806016_o.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 h1 {
