@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<link href="tictactoe_beta1.css" rel="stylesheet" />
+		<script src="tictactoe_beta1.js"></script>
+	</head>
+	<body>
+		<h1><strong><center>TR8's Favorite Game of Tic Tac Toe</center></strong></h1>
+		<div>
+			<div class="row">
+				<div id="0_0" onclick="place(this)"></div>
+				<div id="1_0" onclick="place(this)"></div>
+				<div id="2_0" onclick="place(this)"></div>
+			</div>
+			<div class="row">
+				<div id="0_1" onclick="place(this)"></div>
+				<div id="1_1" onclick="place(this)"></div>
+				<div id="2_1" onclick="place(this)"></div>
+			</div>
+			<div class="row">
+				<div id="0_2" onclick="place(this)"></div>
+				<div id="1_2" onclick="place(this)"></div>
+				<div id="2_2" onclick="place(this)"></div>
+			</div>
+		</div>
+		<aside class="score">
+			<div id="oTrooper">
+				<h1>Trooper O</h1>
+				<div id="oScore" onclick="keepScore(this)">0</div>
+			</div>
+			<div id="xTrooper">
+				<h1>Trooper X</h1>
+				<div id="xScore" onclick="keepScore(this)">0</div>
+			</div>
+		</aside>
+	</body>
+</html>

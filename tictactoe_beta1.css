@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html {
+	background-image: url(89033630_2768219579880847_6136257124830806016_o.jpg);
+}
+
+h1 {
+	color: white;
+	font-weight: bold;
+	font-size: 4em;
+	height: 20px;
+	line-height: 1px;
+	text-shadow: black 1px 1px 1px, white 0px -2px 0px;
+}
+
+#oScore, #xScore {
+	color: white;
+	font-weight: bold;
+	font-size: 4em;
+	height: 1px;
+	line-height: 1px;
+}
+
+.row div {
+	padding: 10px;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+	border-style: ridge;
+	height: 120px;
+	line-height: 120px;
+	width: 120px;
+	float: none;
+	color: white;
+	font-size: 10em;
+	font-weight: bold;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	flex-flow:row wrap;
+	align-items: center;
+}
+
+aside #oTrooper h1 {
+	clear: left;
+	float: left;
+	margin-top: -130px;
+	margin-bottom: 0px;
+}
+
+aside #xTrooper h1 {
+	clear: right;
+	float: right;
+	margin-top: -130px;
+	margin-bottom: 0px;
+}
+
+aside #oScore {
+	clear: left;
+	float: left;
+	margin-top: -40px;
+	margin-bottom: 0px;
+	margin-left: 60px;
+}
+
+aside #xScore {
+	clear: right;
+	float: right;
+	margin-top: -40px;
+	margin-bottom: 0px;
+	margin-right: 60px;
+}
