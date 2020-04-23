@@ -9,8 +9,8 @@ function place(box) {
 	if(box.innerText != "" || won) return;
 	box.innerText = currentPlayer;
 	//window.alert(box.innerText);
-	//gameStatus();
-	checkGameBoard();
+	gameStatus();
+	//checkGameBoard();
 	if(currentPlayer == "O") {
 		 return computerPlayer();
 	}
@@ -40,9 +40,9 @@ function checkWinner(first, second, third){
 		alert(currentPlayer + " is the winner! Long live the Empire and the First Order!");
 		won = true;
 		return keepScore();
-		} else {
-			gameStatus();
-		}
+		} //else {
+			//gameStatus();
+		//}
 }
 
 function keepScore() {
@@ -75,6 +75,7 @@ function refresh() {
 }
 
 function gameStatus(){
+	checkGameBoard();
 	if(document.getElementById("0_0").innerText!="" && document.getElementById("0_1").innerText!="" && document.getElementById("0_2").innerText!="" && document.getElementById("1_0").innerText!="" && document.getElementById("1_1").innerText!="" && document.getElementById("1_2").innerText!="" && document.getElementById("2_0").innerText!="" && document.getElementById("2_1").innerText!="" && document.getElementById("2_2").innerText!="" && won != true) {
 		window.alert("Draw. " + " " + currentPlayer + " was the last player.");
 		refresh();
